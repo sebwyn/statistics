@@ -1,4 +1,4 @@
 pub mod dct;
 pub mod stats;
-pub mod stats_plots;
+pub mod plot;
 pub mod data_code;

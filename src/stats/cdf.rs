@@ -1,12 +1,33 @@
-use std::collections::BTreeSet;
-use std::collections::HashMap;
+use std::collections::BTreeMap;
 
-use std::hash::Hash;
 use core::fmt::Debug;
+use std::hash::Hash;
 
 pub struct Cdf<T> {
-    sample: BTreeSet<T>,
-    freqs: HashMap<T, usize>,
+    sample: BTreeMap<T, usize>,
+}
+
+impl<T> Cdf<T> 
+where
+    T: Copy
+{
+    pub fn min_x(&self) -> T {
+        *self
+            .sample
+            .keys()
+            .into_iter()
+            .next()
+            .expect("Can't call min on empty Cdf")
+    }
+
+    pub fn max_x(&self) -> T {
+        *self
+            .sample
+            .keys()
+            .into_iter()
+            .next_back()
+            .expect("Can't call max on empty Cdf")
+    }
 }
 
 impl<T> Cdf<T>
@@ -15,43 +36,43 @@ where
 {
     pub fn new() -> Cdf<T> {
         Self {
-            sample: BTreeSet::new(),
-            freqs: HashMap::new(),
+            sample: BTreeMap::new(),
         }
     }
 
-    pub fn insert(&mut self, v: T) {
-        if (self.sample.contains(&v)) {
-            let s = self
-                .freqs
-                .get_mut(&v)
-                .expect("Somehow in set and not in hash");
-            *s += 1;
+    pub fn insert(&mut self, k: T) {
+        if let Some(v) = self.sample.get_mut(&k) {
+            *v += 1;
         } else {
-            self.sample.insert(v);
-            self.freqs.insert(v, 1);
+            self.sample.insert(k, 1);
         }
     }
 
-    pub fn eval(&self, v: T) -> f32 {
+    pub fn get_percentile(&self, key: T) -> f32 {
         let mut position = 0;
-        for s in self.sample.iter() {
-            if v > *s {
-                position += self.freqs.get(s).expect("Somehow in set and not in hash");
+        for (k, count) in self.sample.iter() {
+            if key > *k {
+                position += count;
             } else {
                 break;
             }
         }
-        let length: usize = self.freqs.values().sum();
+        let length: usize = self.sample.values().into_iter().sum();
 
         position as f32 / length as f32
     }
 
-    pub fn construct_eval_map(&self) -> HashMap<T, f32> {
-        let mut m: HashMap<T, f32> = HashMap::new();
-        for v in self.sample.iter() { //could iterate over sample or freqs, one is probably more performant
-            m.insert(*v, self.eval(*v));
+    //essentiall normalize the data with respect
+    pub fn get_percentiles(&self) -> BTreeMap<&T, f32> {
+        let mut m = BTreeMap::new();
+
+        let length: usize = self.sample.values().into_iter().sum();
+        let mut position = 0;
+        for (key, count) in self.sample.iter() {
+            m.insert(key, position as f32 / length as f32);
+            position += count;
         }
+
         m
     }
 }
@@ -62,20 +83,20 @@ where
 {
     fn from(vec: Vec<T>) -> Self {
         let mut cdf = Cdf::<T>::new();
-        for s in vec.iter() {
-            cdf.insert(*s);
+        for key in vec.iter() {
+            cdf.insert(*key);
         }
         cdf
     }
 }
 
-impl<T> Debug for Cdf<T> 
+impl<T> Debug for Cdf<T>
 where
-    T: Debug + Ord + Hash + Eq + Copy
+    T: Debug + Ord + Hash + Eq + Copy,
 {
     fn fmt(&self, _: &mut core::fmt::Formatter) -> Result<(), std::fmt::Error> {
         //create an object that stores the evaluation of every value in the cdf
-        println!("{:?}", self.construct_eval_map());
+        println!("{:?}", self.get_percentiles());
         Ok(())
     }
 }
