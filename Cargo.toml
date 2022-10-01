@@ -9,3 +9,4 @@ edition = "2021"
 regex = "1.6.0"
 polars = { git = "https://github.com/pola-rs/polars", features = ["lazy"]}
 plotters = "0.3.4"
+rand = "0.8.5"
