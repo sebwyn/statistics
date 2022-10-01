@@ -1,0 +1,263 @@
+Place,Div/Tot,Usatfdiv,Nettime,Pace,Guntime,First Name,Last Name,Age,Sex,No.,City,St
+1,1,M4044,0:32:07,0:05:11,0:32:08,Jesse,Davis,40,M,67,Indianapolis,IN
+2,2,M4044,0:33:05,0:05:20,0:33:05,John,Poray,41,M,216,Fishers,IN
+3,3,M4044,0:33:11,0:05:21,0:33:12,Ben,Jarrett,42,M,129,Andover,MA
+4,4,M4044,0:33:17,0:05:22,0:33:17,Dan,Smith,43,M,258,Shelburne Falls,MA
+5,5,M4044,0:33:29,0:05:24,0:33:30,Chris,Garvin,41,M,101,Kingston,RI
+6,1,M4549,0:33:36,0:05:25,0:33:37,Jason,Holroyd,45,M,124,Everett,MA
+7,1,M5054,0:33:38,0:05:25,0:33:38,Mark,Carroll,50,M,43,Newtonville,MA
+8,2,M5054,0:33:38,0:05:25,0:33:39,Richard,Falcone,51,M,84,Madison,NJ
+9,6,M4044,0:33:46,0:05:26,0:33:49,Dusty,Lopez,42,M,163,Williamstown,MA
+10,2,M4549,0:33:55,0:05:28,0:33:56,Mike,Cole,46,M,51,Zionsville,IN
+11,3,M5054,0:34:08,0:05:30,0:34:09,Gregory,Putnam,52,M,221,Stoneham,MA
+12,7,M4044,0:34:13,0:05:31,0:34:13,Tj,Unger,43,M,278,Westwood,MA
+13,3,M4549,0:34:15,0:05:31,0:34:17,Aaron,Price,45,M,220,Brookline,MA
+14,4,M5054,0:34:18,0:05:32,0:34:19,Steve,Bell,50,M,16,Kennesaw,GA
+15,1,M5559,0:34:20,0:05:32,0:34:22,Nat,Larson,59,M,150,Amherst,MA
+16,5,M5054,0:34:25,0:05:33,0:34:25,Ivan,Lieben,52,M,159,Lafayette,CA
+17,8,M4044,0:34:34,0:05:34,0:34:35,David,Ferruggia,44,M,88,Bernardsville,NJ
+18,6,M5054,0:34:48,0:05:36,0:34:51,Dave,Dugan,51,M,77,Cohasset,MA
+19,9,M4044,0:34:48,0:05:36,0:34:50,Lee,Danforth,43,M,66,Norwood,MA
+20,2,M5559,0:35:02,0:05:39,0:35:03,Brian,Crowley,57,M,63,Hillsborough,NJ
+21,10,M4044,0:35:06,0:05:39,0:35:07,Shawn,Williams,44,M,292,Bloomfield,NJ
+22,7,M5054,0:35:10,0:05:40,0:35:10,Jonathan,Frieder,51,M,96,Rye Brook,NY
+23,4,M4549,0:35:20,0:05:42,0:35:22,Harry,Stants,49,M,260,Needham,MA
+24,11,M4044,0:35:29,0:05:43,0:35:30,Paulo,Amaral,41,M,4,Lowell,MA
+25,8,M5054,0:35:47,0:05:46,0:35:48,Mark,Andrews,51,M,7,Rochester,NY
+26,12,M4044,0:35:49,0:05:46,0:35:51,Shamus,Brady,40,M,28,Winchester,MA
+27,9,M5054,0:35:54,0:05:47,0:35:56,Brent,Fields,50,M,89,Covington,GA
+28,1,M6064,0:35:57,0:05:48,0:35:59,Tim,Degrado,62,M,70,Arvada,CO
+29,1,F4044,0:36:00,0:05:48,0:36:01,Jessica,Smith,41,F,259,Oakland,CA
+30,10,M5054,0:36:03,0:05:49,0:36:04,David,Guzik,51,M,115,Fairfield,CT
+31,5,M4549,0:36:12,0:05:50,0:36:15,Matthew,Conant,46,M,52,St. Augustine,FL
+32,3,M5559,0:36:19,0:05:51,0:36:21,Scott,Grandfield,57,M,110,Rehoboth,RI
+33,2,M6064,0:36:39,0:05:54,0:36:41,Rick,Lee,61,M,154,Bayville,NJ
+34,11,M5054,0:36:46,0:05:55,0:36:48,Joseph,Shairs,53,M,250,Peabody,MA
+35,3,M6064,0:36:50,0:05:56,0:36:54,Paul,McGovern,62,M,182,Methuen,MA
+36,4,M6064,0:36:58,0:05:57,0:36:59,Joseph,Mora,60,M,91,Fayetteville,NY
+37,2,F4044,0:37:05,0:05:58,0:37:05,Jennifer,Mortimer,40,F,193,Bedford,NH
+38,3,F4044,0:37:14,0:06:00,0:37:15,Jessica,Hruska,42,F,126,Dubuque,IA
+39,6,M4549,0:37:15,0:06:00,0:37:16,Donal,O'Sullivan,48,M,205,Leeds,MA
+40,12,M5054,0:37:16,0:06:00,0:37:17,Brad,Slavens,53,M,257,Atlanta,GA
+41,4,F4044,0:37:20,0:06:01,0:37:20,Kelly,Couch,44,F,58,Hillsborough,CA
+42,13,M4044,0:37:21,0:06:01,0:37:24,Erik,Richards,40,M,232,Holliston,MA
+43,5,F4044,0:37:27,0:06:02,0:37:28,Brett,Ely,42,F,82,Marblehead,MA
+44,4,M5559,0:37:30,0:06:03,0:37:32,Alejandro,Heuck,57,M,120,Amherst,MA
+45,5,M5559,0:37:35,0:06:03,0:37:37,Fred,Weir,55,M,288,Cumming,GA
+46,5,M6064,0:37:39,0:06:04,0:37:40,Robert,McCormack,61,M,178,Foxboro,MA
+47,13,M5054,0:37:39,0:06:04,0:37:41,Jeffrey,Conston,54,M,53,Hopewell Jct,NY
+48,1,M6569,0:37:46,0:06:05,0:37:48,Ken,Youngers,65,M,293,Tucker,GA
+49,14,M4044,0:37:49,0:06:06,0:37:52,Jason,Bui,41,M,34,Ayer,MA
+50,15,M4044,0:37:49,0:06:06,0:37:53,Ryan,Proulx,42,M,298,Portsmouth,NH
+51,6,M5559,0:37:56,0:06:07,0:37:57,John,Hogan,56,M,122,Township Of Washingt,NJ
+52,1,F5054,0:38:01,0:06:07,0:38:02,Abby,Dean,50,F,68,Wilmington,DE
+53,7,M5559,0:38:02,0:06:08,0:38:04,Harold,Porcher,57,M,217,Bloomfield,NJ
+54,7,M4549,0:38:05,0:06:08,0:38:06,Timothy,Gavin,46,M,103,Weston,MA
+55,6,F4044,0:38:07,0:06:08,0:38:11,Erin,Genova,42,F,104,North Reading,MA
+56,16,M4044,0:38:08,0:06:09,0:38:09,Brian,Cronin,42,M,62,Walpole,MA
+57,8,M5559,0:38:10,0:06:09,0:38:10,Scott,Siriano,55,M,256,Reno,NV
+58,14,M5054,0:38:11,0:06:09,0:38:13,Steve,Neri,54,M,198,Attleboro,MA
+59,6,M6064,0:38:12,0:06:09,0:38:14,David,Westenberg,64,M,289,Wellesley,MA
+60,17,M4044,0:38:21,0:06:11,0:38:24,Mark,Ansley,40,M,8,Lowell,MA
+61,9,M5559,0:38:25,0:06:11,0:38:27,Michael,Strickland,55,M,269,Acworth,GA
+62,18,M4044,0:38:36,0:06:13,0:38:38,Andre,Marques,42,M,174,Lowell,MA
+63,7,M6064,0:38:36,0:06:13,0:38:39,Casey,Hannan,62,M,117,Atlanta,GA
+64,10,M5559,0:38:39,0:06:14,0:38:42,Alex,McHenry,56,M,184,South Burlington,VT
+65,11,M5559,0:38:45,0:06:15,0:38:52,Matt,Gallagher,57,M,99,Burlington,VT
+66,12,M5559,0:38:46,0:06:15,0:38:50,John,Borthwick,58,M,24,Dillon,CO
+67,13,M5559,0:38:48,0:06:15,0:38:49,Mike,Nier,57,M,200,Rochester,NY
+68,15,M5054,0:38:51,0:06:16,0:38:55,Steve,Bosic,53,M,26,Waltham,MA
+69,16,M5054,0:38:55,0:06:16,0:38:57,Frank,Nelson,50,M,197,Bridgewater,MA
+70,19,M4044,0:38:56,0:06:16,0:38:59,Matthew,Killian,41,M,142,South Hadley,MA
+71,14,M5559,0:38:56,0:06:16,0:38:58,Jason,Cakouros,56,M,39,Milton,MA
+72,7,F4044,0:38:57,0:06:16,0:39:01,Melissa,Stellato,40,F,262,South Windsor,CT
+73,8,F4044,0:38:57,0:06:16,0:38:59,Christina,Campbell,40,F,40,Hingham,MA
+74,15,M5559,0:39:00,0:06:17,0:39:02,Francis,Burdett,57,M,35,Worcester,MA
+75,17,M5054,0:39:10,0:06:19,0:39:12,Michael,Dunlop,52,M,78,Norfolk,MA
+76,1,F4549,0:39:10,0:06:19,0:39:11,Rebeccah,Wassner,46,F,286,New York,NY
+77,8,M4549,0:39:11,0:06:19,0:39:14,Robert,Riordan,48,M,237,Glen Ridge,NJ
+78,18,M5054,0:39:16,0:06:20,0:39:19,Matthew,Cutrona,51,M,65,Wilmington,DE
+79,16,M5559,0:39:18,0:06:20,0:39:19,Theodor,Schnaufer,58,M,247,Lewisburg,PA
+80,9,F4044,0:39:18,0:06:20,0:39:19,Katie,Famous,42,F,87,San Francisco,CA
+81,2,F5054,0:39:18,0:06:20,0:39:20,Cassandra,Henkiel,51,F,119,Austin,TX
+82,8,M6064,0:39:18,0:06:20,0:39:20,Michael,Salamone,62,M,242,Ringwood,NJ
+83,17,M5559,0:39:28,0:06:22,0:39:32,Mark,Tebbe,56,M,273,Arlington,MA
+84,20,M4044,0:39:30,0:06:22,0:39:33,Dan,Guttenplan,41,M,114,Lowell,MA
+85,9,M6064,0:40:03,0:06:27,0:40:06,John,Van Kerkhove,60,M,283,Rochester,NY
+86,1,F5559,0:40:05,0:06:27,0:40:06,Suzanne,La Burt,58,F,145,Greenwood Lake,NY
+87,10,M6064,0:40:16,0:06:29,0:40:19,William,Mariski,61,M,173,Portland,ME
+88,9,M4549,0:40:25,0:06:31,0:40:27,Brad,Klinedinst,45,M,144,Hudson,MA
+89,11,M6064,0:40:28,0:06:31,0:40:30,Timothy,Riccardi,64,M,231,Marietta,NY
+90,1,M7074,0:40:30,0:06:32,0:40:33,Richard,Larsen,70,M,148,Shelburne,MA
+91,10,F4044,0:40:33,0:06:32,0:40:37,Melissa,Cooney,42,F,54,South Hadley,MA
+92,12,M6064,0:40:37,0:06:33,0:40:39,Chris,Kelly,60,M,139,Westwood,MA
+93,11,F4044,0:40:37,0:06:33,0:40:40,Abby,Mahoney,44,F,170,Holyoke,MA
+94,10,M4549,0:40:37,0:06:33,0:40:39,Tom,Vossen,48,M,285,Norwood,MA
+95,12,F4044,0:40:43,0:06:34,0:40:47,Kara,Leonard,43,F,156,East Greenwich,RI
+96,13,M6064,0:40:49,0:06:35,0:40:52,Nick,Persampieri,62,M,212,Burlington,VT
+97,2,M6569,0:41:05,0:06:37,0:41:07,Kevin,Dollard,66,M,75,Hopewell Junction,NY
+98,3,M6569,0:41:11,0:06:38,0:41:13,Reno,Stirrat,68,M,265,Rockaway,NJ
+99,13,F4044,0:41:23,0:06:40,0:41:25,Erika,Holroyd,44,F,123,Everett,MA
+100,2,F5559,0:41:26,0:06:40,0:41:28,Jody,Dushay,55,F,80,Newton,MA
+101,14,M6064,0:41:33,0:06:42,0:41:35,Donald,Schwartz,61,M,248,Belmar,NJ
+102,2,F4549,0:41:37,0:06:42,0:41:41,Laure,Van Den Broeck Raffens,45,F,282,Leyden,MA
+103,4,M6569,0:41:59,0:06:46,0:42:03,John,Blaser,65,M,22,Dewitt,IA
+104,14,F4044,0:42:02,0:06:46,0:42:07,Erin,Brown,44,F,32,Bridgewater,MA
+105,5,M6569,0:42:16,0:06:49,0:42:18,Scott,Lucking,68,M,166,Taylors,SC
+106,3,F5559,0:42:22,0:06:50,0:42:26,Mimi,Fallon,56,F,86,Walpole,MA
+107,15,M6064,0:42:23,0:06:50,0:42:27,Kevin,Christie,64,M,47,Tewksbury,MA
+108,1,F6064,0:42:24,0:06:50,0:42:28,Stella,Gibbs,63,F,106,Pacific Grove,CA
+109,2,F6064,0:42:28,0:06:51,0:42:32,Lorraine,Jasper,60,F,130,Birchrunville,PA
+110,3,F6064,0:42:36,0:06:52,0:42:39,Doreen,McCoubrie,60,F,179,West Chester,PA
+111,21,M4044,0:42:40,0:06:52,0:42:49,Philip,Crocker,42,M,61,Bellingham,MA
+112,11,M4549,0:42:45,0:06:53,0:42:48,Jose,Serrano,46,M,249,Dedham,MA
+113,15,F4044,0:42:50,0:06:54,0:42:59,Sarah,Dillon,41,F,74,Lowell,MA
+114,3,F5054,0:42:55,0:06:55,0:42:58,Alexandra,Marzulla,51,F,175,Red Bank,NJ
+115,19,M5054,0:43:01,0:06:56,0:43:04,Mathieu,Desjardins,52,M,72,Redwood City,CA
+116,16,M6064,0:43:01,0:06:56,0:43:06,Peter,Lagoy,62,M,146,Hopkinton,MA
+117,3,F4549,0:43:12,0:06:58,0:43:14,Brooke,Bray,45,F,30,San Francisco,CA
+118,6,M6569,0:43:14,0:06:58,0:43:17,Eugene,Myers,69,M,195,Columbia,MD
+119,18,M5559,0:43:26,0:07:00,0:43:29,Wayne,Crandall,59,M,59,West Henrietta,NY
+120,4,F5559,0:43:27,0:07:00,0:43:32,Trish,Bourne,58,F,27,Tewksbury,MA
+121,7,M6569,0:43:31,0:07:01,0:43:36,John,Barbour,68,M,11,West Roxbury,MA
+122,5,F5559,0:43:32,0:07:01,0:43:37,Michelle,Allen,58,F,3,Fleming Island,FL
+123,4,F6064,0:43:35,0:07:01,0:43:39,Mary,Swan,60,F,272,Jamesville,NY
+124,16,F4044,0:43:36,0:07:01,0:43:42,Amy,Rusiecki,42,F,240,South Deerfield,MA
+125,6,F5559,0:43:36,0:07:01,0:43:39,Kris,Huff,58,F,127,Newnan,GA
+126,12,M4549,0:43:39,0:07:02,0:43:47,Jay,Salus,48,M,243,Northbridge,MA
+127,17,M6064,0:43:44,0:07:03,0:43:47,Paul,Corcoran,64,M,55,Needham,MA
+128,5,F6064,0:43:48,0:07:03,0:43:52,Mary,Cass,60,F,45,Westport,MA
+129,19,M5559,0:43:53,0:07:04,0:43:59,Stephen,Binder,59,M,19,Lincoln,MA
+130,17,F4044,0:43:53,0:07:04,0:43:58,Paulina,Baltazar,43,F,10,Shelburne Falls,MA
+131,2,M7074,0:43:58,0:07:05,0:44:02,Kirk,Larson,70,M,149,Atlanta,GA
+132,18,M6064,0:44:08,0:07:07,0:44:13,John,Hadcock,63,M,116,Niantic,CT
+133,4,F4549,0:44:08,0:07:07,0:44:10,Kathy,Wiegand,47,F,291,Tucker,GA
+134,8,M6569,0:44:28,0:07:10,0:44:32,Scott,Linnell,65,M,160,Colts Neck,NJ
+135,3,M7074,0:44:30,0:07:10,0:44:34,Jerry,Learned,73,M,151,Gainesville,GA
+136,19,M6064,0:44:32,0:07:10,0:44:35,Harry,Pino,62,M,215,Pomona,NY
+137,22,M4044,0:44:37,0:07:11,0:44:46,Jeffrey,Maistrosky,41,M,171,Nashua,NH
+138,4,M7579,0:44:38,0:07:11,0:44:42,Dave,Glass,75,M,108,Glenville,NY
+139,18,F4044,0:44:40,0:07:12,0:44:43,Amanda,Reich,43,F,226,Boston,MA
+140,23,M4044,0:44:42,0:07:12,0:44:54,Joey,Stoltz,42,M,267,Annville,PA
+141,20,M6064,0:44:43,0:07:12,0:44:47,Kenneth,Johnson,63,M,135,North Windham,CT
+142,20,M5054,0:44:44,0:07:12,0:44:52,Anthony,Landry,54,M,147,Milford,MA
+143,7,F5559,0:45:06,0:07:16,0:45:09,Laura,Delea,56,F,71,Allamuchy-Hackettsto,NJ
+144,21,M5054,0:45:15,0:07:17,0:45:25,Mark,Capparella,52,M,41,Bellingham,MA
+145,21,M6064,0:45:16,0:07:18,0:45:24,Eric,Furfine,62,M,98,Lincoln,MA
+146,24,M4044,0:45:21,0:07:18,0:45:29,Miguel,Osorio,44,M,204,Lowell,MA
+147,22,M6064,0:45:34,0:07:20,0:45:37,Jeffery,Barros,64,M,13,Thornton,CO
+148,23,M6064,0:45:37,0:07:21,0:45:49,Jimmy,Fallon,62,M,85,Walpole,MA
+149,24,M6064,0:45:48,0:07:23,0:45:52,Chris,Diehl,60,M,73,Dedham,MA
+150,9,M6569,0:45:54,0:07:24,0:46:01,Peter,Wasylak,66,M,287,Dunstable,MA
+151,4,F5054,0:45:54,0:07:24,0:46:01,Estelle,McCormack,53,F,177,North Chelmsford,MA
+152,20,M5559,0:46:09,0:07:26,0:46:14,Bill,Newsham,57,M,199,Brookline,NH
+153,21,M5559,0:46:13,0:07:27,0:46:16,Anthony,Crilly,57,M,60,Rochester,NY
+154,6,F6064,0:46:15,0:07:27,0:46:20,Sally,Reiley,62,F,228,Marblehead,MA
+155,22,M5559,0:46:18,0:07:28,0:46:27,Stephen,Sullivan,57,M,270,Uxbridge,MA
+156,25,M6064,0:46:19,0:07:28,0:46:26,David,Penn,61,M,211,Melrose,MA
+157,10,M6569,0:46:23,0:07:28,0:46:28,Harold,Leddy,67,M,153,Bridgewater,NJ
+158,23,M5559,0:46:24,0:07:28,0:46:32,Tom,Raffensperger,57,M,224,Leyden,MA
+159,8,F5559,0:46:55,0:07:34,0:47:02,Jodie,Jensen,58,F,132,Webster,NY
+160,5,M7074,0:47:04,0:07:35,0:47:08,Allan,Bates,73,M,14,Pittsfield,MA
+161,6,M7074,0:47:15,0:07:37,0:47:20,Gordon,MacFarland,74,M,168,Burlington,VT
+162,7,M7579,0:47:16,0:07:37,0:47:23,Gary,Patton,76,M,208,Rock Rapids,IA
+163,8,M7074,0:47:19,0:07:37,0:47:24,Walter,Mann,70,M,172,Townsend,MA
+164,9,M7074,0:47:20,0:07:38,0:47:26,Glenn,Stewart,71,M,264,N Chelmsford,MA
+165,26,M6064,0:47:24,0:07:38,0:47:31,Jim,Shea,62,M,252,Colchester,VT
+166,13,M4549,0:47:42,0:07:41,0:47:53,Rossen,Minkov,49,M,188,Whitinsville,MA
+167,14,M4549,0:47:43,0:07:41,0:47:52,Barry,Long,49,M,162,Chelmsford,MA
+168,5,F4549,0:48:01,0:07:44,0:48:04,Hiroko,Guarnieri,46,F,113,Villa Rica,GA
+169,7,F6064,0:48:08,0:07:45,0:48:12,Victoria,Bok,60,F,23,Jamaica Plain,MA
+170,9,F5559,0:48:16,0:07:46,0:48:21,Kerry,Gaughan,59,F,102,River Vale,NJ
+171,5,F5054,0:48:36,0:07:50,0:48:43,Lisa,Sternstrom,50,F,263,Holden,MA
+172,1,F6569,0:48:39,0:07:50,0:48:46,Claire,McManus,65,F,185,Boston,MA
+173,10,M7579,0:48:41,0:07:51,0:48:45,Jim,May,75,M,176,Williamson,NY
+174,8,F6064,0:48:52,0:07:52,0:49:01,Liz,Champagne,64,F,46,South Burlington,VT
+175,11,M6569,0:48:53,0:07:52,0:48:58,Mitch,Moore,67,M,189,Rochester,NY
+176,6,F4549,0:48:54,0:07:53,0:48:59,Yongli,Ji,49,F,134,Carlisle,MA
+177,10,F5559,0:48:55,0:07:53,0:49:01,Sandra,Gregorich,59,F,112,Ithaca,NY
+178,6,F5054,0:49:00,0:07:53,0:49:08,Jill,Lohmeier,54,F,161,Acton,MA
+179,11,M7579,0:49:08,0:07:55,0:49:14,Jan,Frisby,78,M,97,Grand Junction,CO
+180,11,F5559,0:49:09,0:07:55,0:49:16,Robin,Reilly,56,F,230,Boston,MA
+181,12,M6569,0:49:30,0:07:58,0:49:39,Adam,Nisson,66,M,201,Amesbury,MA
+182,2,F6569,0:49:32,0:07:59,0:49:38,Alda,Cossi,66,F,57,Winchester,MA
+183,12,F5559,0:49:32,0:07:59,0:49:38,Mary,McNulty,59,F,186,Medway,MA
+184,13,F5559,0:49:38,0:08:00,0:49:43,Anne,Zehr,56,F,294,Somerville,MA
+185,13,M6569,0:49:40,0:08:00,0:49:45,Gene,Jensen,67,M,131,Webster,NY
+186,12,M7074,0:49:47,0:08:01,0:49:53,Paul,Persia,71,M,213,Batavia,NY
+187,24,M5559,0:49:52,0:08:02,0:49:58,Andy,Sieracki,55,M,255,Hadley,MA
+188,13,M7579,0:50:01,0:08:03,0:50:05,Ezequiel,Garcia,76,M,100,Newark,NJ
+189,14,M7579,0:50:01,0:08:03,0:50:05,Liam,Finnigan,75,M,297,Farmington,NY
+190,15,M7579,0:50:02,0:08:04,0:50:08,Paul,Carlin,76,M,42,Three Oaks,MI
+191,25,M5559,0:50:04,0:08:04,0:50:08,Joe,Ciavattone,56,M,49,Milton,MA
+192,22,M5054,0:50:06,0:08:04,0:50:16,John,McCue,54,M,180,Bellingham,MA
+193,19,F4044,0:50:16,0:08:06,0:50:23,Lauren,Fitzpatrick,42,F,93,Westwood,MA
+194,7,F5054,0:50:17,0:08:06,0:50:24,Carmen,Alfonzo,52,F,2,Dedham,MA
+195,7,F4549,0:50:24,0:08:07,0:50:30,Katie,Fobert,45,F,94,Foxboro,MA
+196,16,M7074,0:50:38,0:08:09,0:50:42,Allen,Joyce,73,M,137,Savannah,GA
+197,1,F7074,0:50:46,0:08:11,0:50:52,Karen,Durante,71,F,79,Newburyport,MA
+198,26,M5559,0:51:08,0:08:14,0:51:18,David,Burns,56,M,37,Lowell,MA
+199,9,F6064,0:51:11,0:08:15,0:51:19,Liane,Pancoast,64,F,206,Westford,MA
+200,27,M6064,0:51:21,0:08:16,0:51:32,Leo,Tometich,61,M,275,Dunstable,MA
+201,27,M5559,0:51:25,0:08:17,0:51:35,Antonio,Espinola,57,M,83,Dracut,MA
+202,3,F6569,0:51:32,0:08:18,0:51:37,Anne,Shreffler,65,F,254,Brookline,MA
+203,10,F6064,0:51:33,0:08:18,0:51:39,Teresa,Quan,60,F,222,Menlo Park,CA
+204,28,M6064,0:51:55,0:08:22,0:51:58,James,Brigden,61,M,31,Webster,NY
+205,4,F6569,0:52:09,0:08:24,0:52:15,Susan,Stirrat,66,F,266,Rockaway,NJ
+206,23,M5054,0:52:21,0:08:26,0:52:31,Michael,Hopkins,54,M,125,Salem,NH
+207,2,F7074,0:52:43,0:08:29,0:52:48,Jessica,Wheeler,71,F,290,Bristol,RI
+208,8,F5054,0:52:46,0:08:30,0:52:53,Tammy,McDonough,53,F,181,Haverhill,MA
+209,3,F7074,0:52:53,0:08:31,0:53:01,Mary,Sharkey,72,F,251,Grosvenor Dale,CT
+210,9,F5054,0:53:14,0:08:34,0:53:19,Melanie,MacFarlane,52,F,169,Arlington,MA
+211,14,F5559,0:53:14,0:08:35,0:53:19,Shahdokht,Reeder,59,F,225,Brighton,MA
+212,5,F6569,0:53:32,0:08:37,0:53:39,Lorraine,McPhillips,67,F,187,Bethlehem,NH
+213,17,M8085,0:54:11,0:08:44,0:54:16,Hal,Bennett,80,M,18,Columbia,CT
+214,18,M7074,0:54:13,0:08:44,0:54:20,Stephen,Viegas,73,M,284,Reading,MA
+215,11,F6064,0:54:25,0:08:46,0:54:32,Leann,Finnigan,60,F,90,Farmington,NY
+216,6,F6569,0:54:30,0:08:47,0:54:36,Sharon,Moore,67,F,190,Rochester,NY
+217,15,F5559,0:55:52,0:09:00,0:55:59,Leslie,Nowicki,58,F,202,Holmdel,NJ
+218,15,M4549,0:55:56,0:09:01,0:56:06,Thomas,Stracqualursi,47,M,268,Leominster,MA
+219,12,F6064,0:55:58,0:09:01,0:56:05,Wende,Rieck,60,F,234,Canandaigua,NY
+220,19,M7579,0:56:22,0:09:05,0:56:27,Clayton Zeke,Zucker,78,M,295,Brunswick,ME
+221,29,M6064,0:56:27,0:09:06,0:56:32,Vincent,Juliano,64,M,138,Delanson,NY
+222,7,F6569,0:56:39,0:09:07,0:56:49,Leslie,Behan,65,F,15,Newton,NH
+223,20,M7579,0:56:41,0:09:08,0:56:47,Przemyslaw,Nowicki,77,M,203,Holmdel,NJ
+224,24,M5054,0:56:46,0:09:08,0:56:57,Sean,Patten,53,M,207,Allenstown,NH
+225,16,F5559,0:56:46,0:09:09,0:56:54,Marcia,Rullie,57,F,239,Millville,MA
+226,4,F7074,0:56:57,0:09:10,0:57:02,Barbara,Sauer,74,F,245,Buffalo,NY
+227,21,M7074,0:57:17,0:09:13,0:57:23,David,Blake,72,M,21,Stafford,NY
+228,17,F5559,0:57:27,0:09:15,0:57:37,Barbara,Kendall,59,F,140,Chelmsford,MA
+229,10,F5054,0:57:41,0:09:17,0:57:50,Angel,Richmond,52,F,233,Dracut,MA
+230,22,M8085,0:58:03,0:09:21,0:58:13,George,Gilder,82,M,107,Tyringham,MA
+231,11,F5054,0:58:13,0:09:23,0:58:20,Terri,Powell,54,F,219,Whitinsville,MA
+232,12,F5054,0:58:23,0:09:24,0:58:31,Trista,Brown,51,F,33,Upton,MA
+233,23,M7579,0:58:47,0:09:28,0:58:52,David,Pember,79,M,210,Millis,MA
+234,24,M8085,0:58:51,0:09:29,0:58:57,Roland,Cormier,82,M,56,Jackson,NJ
+235,8,F4549,0:59:06,0:09:31,0:59:12,Maria,Zullo,48,F,296,Boston,MA
+236,13,F6064,0:59:15,0:09:33,0:59:23,Julie,Haynes,63,F,118,Swampscott,MA
+237,25,M7579,1:01:23,0:09:53,1:01:27,Sam,Benedict,75,M,17,Decatur,GA
+238,26,M7579,1:01:30,0:09:54,1:01:35,Joseph,Lenahan,75,M,155,Roswell,GA
+239,5,F7074,1:01:48,0:09:57,1:01:56,Monica,Luchini,70,F,165,Sutton,MA
+240,30,M6064,1:01:57,0:09:59,1:02:03,Mike,Fitzgerald,64,M,92,Norwood,MA
+241,27,M8085,1:02:35,0:10:05,1:02:44,John,Elliott,83,M,81,Columbia,MD
+242,28,M8085,1:03:41,0:10:15,1:03:53,Duane,Lougee,85,M,164,Norfolk,VA
+243,6,F7074,1:03:55,0:10:18,1:04:03,Linda,Usher,73,F,280,Upton,MA
+244,14,M6569,1:04:06,0:10:19,1:04:14,Douglas,Usher,66,M,279,Upton,MA
+245,18,F5559,1:05:23,0:10:32,1:05:33,Patricia,Porter,58,F,218,Dracut,MA
+246,13,F5054,1:05:49,0:10:36,1:05:58,Valerie,Anderson,54,F,6,North Chelmsford,MA
+247,29,M8085,1:06:21,0:10:41,1:06:26,Denny,Leblanc,80,M,152,Nashua,NH
+248,30,M7579,1:08:40,0:11:03,1:08:46,Richard,Paulsen,78,M,209,Woburn,MA
+249,31,M8085,1:08:53,0:11:06,1:09:01,Philip,Pierce,80,M,214,Falmouth,ME
+250,7,F7079,1:09:04,0:11:07,1:09:15,Joan,Tremberth,77,F,277,Scarborough,ME
+251,14,F5054,1:13:51,0:11:54,1:14:03,Laura,Ryan,51,F,241,Milton,VT
+252,25,M5054,1:13:51,0:11:54,1:14:04,Joseph,Gould,52,M,109,Milton,VT
+253,15,M6569,1:14:50,0:12:03,1:14:59,Barry,Blake,67,M,20,Needham,MA
+254,28,M5559,1:14:50,0:12:03,1:15:01,Christopher,Schaffner,58,M,246,Concord,MA
+255,32,M8085,1:17:59,0:12:33,1:18:08,Ram,Satyaprasad,83,M,244,Burlington,MA
+256,9,F4549,1:21:08,0:13:04,1:21:16,Iwona,Boruch,48,F,25,Holyoke,MA
+257,33,M7074,1:23:23,0:13:26,1:23:30,Peter,Stasz,74,M,261,Holyoke,MA
+258,8,F8589,1:25:12,0:13:43,1:25:23,Edna,Hyer,87,F,128,Orchard Park,NY
+259,8,F6569,1:26:30,0:13:56,1:26:41,Helene,Myers,67,F,196,Columbia,MD
+260,34,M8085,1:36:03,0:15:28,1:36:13,Jerry,Levasseur,84,M,158,Brunswick,ME
+261,35,M7579,1:39:12,0:15:58,1:39:19,William,Ash,79,M,9,Hewitt,NJ
+262,36,M8085,1:50:57,0:17:52,1:51:04,Al,Swan,81,M,271,,
