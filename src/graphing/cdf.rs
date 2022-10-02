@@ -3,23 +3,27 @@ use std::{collections::BTreeMap, hash::Hash};
 
 use crate::stats::cdf::*;
 
-use super::Plot;
-use super::plot_many::*;
+use crate::graphing::graph::*;
 
 impl<T> Plot for Cdf<T>
 where
     T: Ord + Hash + Eq + Copy + Into<i128>,
 {
+    type Coord = (i128, f32);
+
     //temporarily use i128 as the base index type
     fn plot(&self, file: &str, name: &str){
-        let x_min = self.min_x();
-        let x_max = self.max_x();
+        let x_min: i128 = self.min_x().into();
+        let x_max: i128 = self.max_x().into();
 
-        let paths = self.get_lines();
+        let paths = match self.get_plot_data() {
+            PlotDataTypes::Lines(x) => x,
+            _ => panic!("Cdf plot implementation changed")
+        };
 
         //specify chart
         let size = (640, 480);
-        let x_range = (x_min.into()..x_max.into()).step(1i128);
+        let x_range = x_min..x_max;
         let y_range = (0f32..1f32).step(0.01);
 
         let drawing_area = BitMapBackend::new(file, size).into_drawing_area();
@@ -37,43 +41,20 @@ where
         chart.configure_mesh().disable_mesh().draw().unwrap();
         chart.draw_series(paths.into_iter()).unwrap();
     }
-}
 
-impl<T> PlotMany<i128, f32> for Cdf<T> 
-where
-    T: Copy + Hash + Ord + Eq +Into<i128>
-{
-    fn get_chart_data(&self) -> PlotData<i128, f32> {
-        PlotData::<i128, f32>::Lines(self.get_lines())
-    }
-
-    fn get_min(&self) -> (i128, f32) {
-        (Into::<i128>::into(self.min_x()), 0f32)
-    }
-
-    fn get_max(&self) -> (i128, f32) {
-        (Into::<i128>::into(self.max_x()), 1f32)
-    }
-}
-
-impl<T> Cdf<T>
-where
-    T: Copy + Hash + Ord + Eq + Into<i128>,
-{
-    fn get_lines(&self) -> Vec<PathElement<(i128, f32)>> {
-        let x_min = self.min_x();
-        let x_max = self.max_x();
+    fn get_plot_data(&self) -> PlotDataTypes<Self::Coord> {
+        let x_min: i128 = self.min_x().into();
+        let x_max: i128 = self.max_x().into();
 
         let cdf: BTreeMap<&T, f32> = self.get_percentiles();
 
         let mut lines = Vec::new();
 
-        let cdf_v: Vec<(i128, f32)> = [(x_min.into(), 0f32)]
+        let cdf_v: Vec<(i128, f32)> = [(x_min, 0f32)]
             .into_iter()
             .chain(
-                cdf.into_iter()
-                    .map(|(x, y)| (x.clone().into(), y))
-                    .chain([(x_max.into(), 1f32)].into_iter()),
+                cdf.into_iter().map(|(x, y)| (x.clone().into(), y))
+            .chain([(x_max, 1f32)].into_iter()),
             )
             .collect();
         for s in cdf_v.windows(3) {
@@ -82,6 +63,14 @@ where
             lines.push(PathElement::new(points, BLUE.filled()));
         }
 
-        lines
+        PlotDataTypes::<Self::Coord>::Lines(lines)
+    }
+
+    fn get_min(&self) -> (i128, f32) {
+        (Into::<i128>::into(self.min_x()), 0f32)
+    }
+
+    fn get_max(&self) -> (i128, f32) {
+        (Into::<i128>::into(self.max_x()), 1f32)
     }
 }
