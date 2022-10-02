@@ -28,3 +28,7 @@ pub trait Plot {
     fn get_min(&self) -> Self::Coord;
     fn get_max(&self) -> Self::Coord;
 }
+
+//maybe one day add a multiplot function, things are set up for it for sure
+//for now it doesn't seem like too much overhead to leave things this way 
+
