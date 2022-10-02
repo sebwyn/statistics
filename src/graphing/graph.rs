@@ -22,11 +22,14 @@ pub enum PlotDataTypes<Coord> {
 pub trait Plot {
     type Coord; //coord may be moved to a template of plot, refactoring required!
 
-    fn plot(&self, file: &str, name: &str);
-    fn get_plot_data(&self) -> PlotDataTypes<Self::Coord>;
+    //continue to implement in a very uniform way so that i can refactor into a template
+    fn plot(&self, file: &str, name: &str, size: (u32, u32));
 
     fn get_min(&self) -> Self::Coord;
     fn get_max(&self) -> Self::Coord;
+
+    fn set_step(&mut self, value: Self::Coord) -> Self;
+    fn get_step(&self) -> Self::Coord;
 }
 
 //maybe one day add a multiplot function, things are set up for it for sure

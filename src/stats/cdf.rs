@@ -3,77 +3,74 @@ use std::collections::BTreeMap;
 use core::fmt::Debug;
 use std::hash::Hash;
 
+use super::pmf::*;
+
+//this struct will always exist as a percentile map in the wild
+#[derive(Clone)]
 pub struct Cdf<T> {
-    sample: BTreeMap<T, usize>,
-}
-
-impl<T> Cdf<T> 
-where
-    T: Copy
-{
-    pub fn min_x(&self) -> T {
-        *self
-            .sample
-            .keys()
-            .into_iter()
-            .next()
-            .expect("Can't call min on empty Cdf")
-    }
-
-    pub fn max_x(&self) -> T {
-        *self
-            .sample
-            .keys()
-            .into_iter()
-            .next_back()
-            .expect("Can't call max on empty Cdf")
-    }
+    percentiles: BTreeMap<T, f64>,
+    count: f64
 }
 
 impl<T> Cdf<T>
 where
     T: Ord + Hash + Eq + Copy,
 {
-    pub fn new() -> Cdf<T> {
+    fn new() -> Cdf<T> {
         Self {
-            sample: BTreeMap::new(),
+            percentiles: BTreeMap::new(),
+            count: 0f64
         }
     }
 
-    pub fn insert(&mut self, k: T) {
-        if let Some(v) = self.sample.get_mut(&k) {
-            *v += 1;
-        } else {
-            self.sample.insert(k, 1);
-        }
-    }
-
-    pub fn get_percentile(&self, key: T) -> f32 {
-        let mut position = 0;
-        for (k, count) in self.sample.iter() {
+    //one of the things that I don't like about this 
+    pub fn calc_percentile(&self, key: T) -> f64 {
+        let mut percentile = 0f64;
+        for (k, percent) in self.percentiles.iter() {
             if key > *k {
-                position += count;
+                percentile += *percent;
             } else {
                 break;
             }
         }
-        let length: usize = self.sample.values().into_iter().sum();
 
-        position as f32 / length as f32
+        percentile
     }
+    //
+    fn to_percentiles(&self) -> Cdf<T> { 
+        let mut m: BTreeMap<T, f64> = BTreeMap::new();
 
-    //essentiall normalize the data with respect
-    pub fn get_percentiles(&self) -> BTreeMap<&T, f32> {
-        let mut m = BTreeMap::new();
-
-        let length: usize = self.sample.values().into_iter().sum();
-        let mut position = 0;
-        for (key, count) in self.sample.iter() {
-            m.insert(key, position as f32 / length as f32);
+        let mut position = 0f64;
+        for (key, count) in self.percentiles.iter() { //percentiles here is not normalized
+            m.insert(*key, position / self.count);
             position += count;
         }
 
-        m
+        Self {
+            percentiles: m,
+            count: self.count
+        }
+    }
+
+    pub fn get_percentiles(&self) -> BTreeMap<T, f64> {
+        self.percentiles.clone()
+    }
+
+}
+
+impl<T> From<Pmf<T>> for Cdf<T> 
+where
+    T: Ord + Hash + Eq + Copy,
+{
+    fn from(pmf: Pmf<T>) -> Self {
+        let mut cdf = Self::new();
+        //both data structures are unique so not very much logic is needed
+        for (k, v) in pmf.freqs.iter() {
+            cdf.percentiles.insert(*k, *v);  
+        }
+        cdf.count = 1f64;
+
+        cdf.to_percentiles()
     }
 }
 
@@ -84,9 +81,16 @@ where
     fn from(vec: Vec<T>) -> Self {
         let mut cdf = Cdf::<T>::new();
         for key in vec.iter() {
-            cdf.insert(*key);
+            //implement insert behavior
+            if let Some(x) = cdf.percentiles.get_mut(key) {
+                *x += 1f64;
+            } else {
+                cdf.percentiles.insert(*key, 1f64);
+            }
         }
-        cdf
+        cdf.count = vec.len() as f64;
+
+        cdf.to_percentiles()
     }
 }
 
@@ -96,7 +100,7 @@ where
 {
     fn fmt(&self, _: &mut core::fmt::Formatter) -> Result<(), std::fmt::Error> {
         //create an object that stores the evaluation of every value in the cdf
-        println!("{:?}", self.get_percentiles());
+        println!("{:?}", self.percentiles);
         Ok(())
     }
 }
