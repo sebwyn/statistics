@@ -15,17 +15,6 @@ pub struct BucketedPmf {
     pub step: (f64, f64)
 }
 
-pub struct Bucket {
-    s: f64,
-    e: f64
-}
-
-impl Bucket {
-    fn contains(&self, val: f64) -> bool {
-        self.s < val && val < self.e
-    }
-}
-
 pub trait AsBucketed : Model {
     fn bucket(&self, step: (f64, f64)) -> BucketedPmf;
 }
@@ -41,11 +30,11 @@ where
         let range = self.range();
         let bucket_count: i128 = (((range.end - range.start) / step.0) as i128) + 1;
         println!("{} {} {} {}", range.start, range.end, step.0, (range.end - range.start) / step.0);
-        let mut range_buckets: Vec<(Bucket, f64)> = (0..bucket_count)
-            .map(|i| -> (Bucket, f64) {
+        let mut range_buckets: Vec<(Range<f64>, f64)> = (0..bucket_count)
+            .map(|i| -> (Range<f64>, f64) {
                 let start = range.start + (i as f64) * step.0;
                 let end = range.start + ((i + 1) as f64) * step.0;
-                (Bucket { s: start, e: end }, 0f64)
+                (Range { start, end }, 0f64)
             })
             .collect();
         //create buckets
@@ -53,13 +42,13 @@ where
             .map(|(x, p)| ->  (f64, f64) {((*x).into(), *p)});
         for (x, p) in  freq_iter {
             for (bx, px) in range_buckets.iter_mut() {
-                if bx.contains(x) {
+                if bx.contains(&x) {
                     *px += p;
                     break
                 }
             }
         }
-        let buckets: Vec<(f64, f64)> = range_buckets.into_iter().map(|(r, p)| (r.s, p)).collect();
+        let buckets: Vec<(f64, f64)> = range_buckets.into_iter().map(|(r, p)| (r.start, p)).collect();
 
         BucketedPmf { buckets, step }
     }
