@@ -1,22 +1,27 @@
-use statistics::data_code::runners;
+use statistics::data_code::babyboom;
 
-use statistics::stats::pmf::*;
+use statistics::stats::analytic::*;
+use statistics::stats::analytic::gaussian::*;
+use statistics::graphing::distribution::*;
 use statistics::stats::cdf::*;
-use statistics::graphing::graph::Plot;
+use statistics::graphing::Plot;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let df = runners::get_data();
-    let pace: Vec<i32> = df
-        .column("Pace")?
-        .i64()?
-        .into_iter()
-        .map(|x| (x.unwrap() as i32))
-        .collect();
-    let pace_pmf: Pmf<i32> = Pmf::from(pace.clone());
-    pace_pmf.bucket((20f64, 0.0001f64)).plot("plots/pace_pmf.png", "Pace Pmf", (640, 480));
+    let df = babyboom::get_data();
+    let min_time: Vec<i64> = df.column("min_time")?.i64()?.into_iter().map(|x| x.unwrap()).collect();
 
-    let pace_cdf: Cdf<i32> = Cdf::from(pace);
-    pace_cdf.plot("plots/pace_cdf.png", "Pace cdf", (640, 480));
+    let mut last: i64 = 0;
+    let mut interarrival_times = Vec::new();
+    for time in min_time.into_iter() {
+        interarrival_times.push(time - last);
+        last = time;
+    }
+    let interarrival_cdf = Cdf::from(interarrival_times);
+    interarrival_cdf.plot("plots/babyboom.png", "Baby Interarrival Time", (640, 480));
+
+    //test some distributions
+    let gaussian = Gaussian::new(5f64, 1f64);
+    gaussian.cdf().build_plottable((0.1, 0.001), 0f64, 10f64).plot("plots/gaussian.png", "Gaussian", (640, 480));
 
     Ok(())
 }

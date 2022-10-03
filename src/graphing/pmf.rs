@@ -1,7 +1,7 @@
 use plotters::prelude::*;
 
 use crate::stats::pmf::*;
-use super::graph::*;
+use super::Plot;
 
 impl Plot for BucketedPmf
 {
@@ -18,6 +18,7 @@ impl Plot for BucketedPmf
         let max = self.get_max();
         let x_range = (min.0..max.0).step(self.step.0).use_round();
         let y_range = (0f64..max.1).step(self.step.1).use_round();
+
         //calculate an acceptable width for the rectangles
         let drawing_area = BitMapBackend::new(file, size).into_drawing_area();
         drawing_area.fill(&WHITE).unwrap();

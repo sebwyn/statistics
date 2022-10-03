@@ -1,6 +1,6 @@
-use std::{collections::{HashMap, BTreeMap}, hash::Hash, ops::Range};
+use std::{collections::HashMap, hash::Hash, ops::Range};
 
-use super::Model;
+use super::*;
 
 #[derive(Debug, Clone)]
 pub struct Pmf<T> {
@@ -29,7 +29,6 @@ where
     {
         let range = self.range();
         let bucket_count: i128 = (((range.end - range.start) / step.0) as i128) + 1;
-        println!("{} {} {} {}", range.start, range.end, step.0, (range.end - range.start) / step.0);
         let mut range_buckets: Vec<(Range<f64>, f64)> = (0..bucket_count)
             .map(|i| -> (Range<f64>, f64) {
                 let start = range.start + (i as f64) * step.0;
@@ -56,7 +55,7 @@ where
 
 impl<T> Pmf<T> 
 where 
-    T: Into<f64>
+    T: Into<f64> + Copy
 {
     //with default step paramaters
     fn new() -> Self {
@@ -70,6 +69,17 @@ where
         self.freqs.values_mut().for_each(|p| {
             *p /= total;
         }) 
+    }
+
+    fn range(&self) -> Range<f64> {
+        let mut lowest_x = f64::MAX;
+        let mut highest_x = f64::MIN;
+        for x in self.freqs.keys().into_iter().map(|k| Into::<f64>::into(*k)) {
+            lowest_x = f64::min(lowest_x, x);
+            highest_x = f64::max( highest_x, x);
+        }
+        
+        Range { start: lowest_x, end: highest_x }
     }
 
 }
@@ -112,16 +122,5 @@ where
             .iter()
             .map(|(x, p)| p * ((Into::<f64>::into(*x) - mean).powf(2.0)))
             .sum()
-    }
-
-    fn range(&self) -> Range<f64> {
-        let mut lowest_x = f64::MAX;
-        let mut highest_x = f64::MIN;
-        for x in self.freqs.keys().into_iter().map(|k| Into::<f64>::into(*k)) {
-            lowest_x = f64::min(lowest_x, x);
-            highest_x = f64::max( highest_x, x);
-        }
-        
-        Range { start: lowest_x, end: highest_x }
     }
 }

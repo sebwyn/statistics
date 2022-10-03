@@ -3,7 +3,7 @@ use std::{collections::BTreeMap, hash::Hash};
 
 use crate::stats::cdf::*;
 
-use crate::graphing::graph::*;
+use super::Plot;
 
 impl<T> Plot for Cdf<T>
 where
@@ -15,7 +15,6 @@ where
     fn plot(&self, file: &str, name: &str, size: (u32, u32)){
         let min = self.get_min();
         let max = self.get_max();
-        println!("{} {} {} {}", min.0, min.1, max.0, max.1);
 
         //specify chart
         let x_range = min.0..max.0;
@@ -32,6 +31,7 @@ where
             .y_label_area_size(30)
             .build_cartesian_2d(x_range, y_range)
             .unwrap();
+
         chart.configure_mesh().disable_mesh().draw().unwrap();
 
         let lines = {
