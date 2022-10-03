@@ -31,7 +31,7 @@ impl Plot for BucketedPmf
             .unwrap();
         chart.configure_mesh().disable_mesh().draw().unwrap();
         
-        let half_margin = 2f64;
+        let half_margin = 0.01f64;
 
         let rectangles = {
             let mut rectangles = Vec::new();

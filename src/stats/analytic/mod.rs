@@ -6,6 +6,10 @@ pub trait Distribution {
     fn eval(&self, x: f64) -> f64;
 }
 
+pub trait Sample {
+    fn sample(&self, x: u32) -> Vec<f64>;
+}
+
 pub trait AsCdf {
     type Dist;
 

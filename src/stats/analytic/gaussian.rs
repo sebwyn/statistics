@@ -1,5 +1,6 @@
 use std::f64::consts::*;
 use libm::erf;
+use rand::random;
 
 use super::*;
 
